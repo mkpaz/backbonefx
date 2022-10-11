@@ -54,6 +54,7 @@
         <openjfx.version>17.0.2</openjfx.version>
 
         <lib.jetbrains-annotations.version>23.0.0</lib.jetbrains-annotations.version>
+        <lib.inject-api.version>2.0.1</lib.inject-api.version>
         <test.assertj.version>3.23.1</test.assertj.version>
         <test.junit.version>5.9.1</test.junit.version>
     </properties>
@@ -65,9 +66,9 @@
             <version>${openjfx.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-graphics</artifactId>
-            <version>${openjfx.version}</version>
+            <groupId>jakarta.inject</groupId>
+            <artifactId>jakarta.inject-api</artifactId>
+            <version>${lib.inject-api.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains</groupId>
