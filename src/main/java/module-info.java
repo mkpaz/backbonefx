@@ -1,6 +1,8 @@
 module backbonefx {
 
     requires transitive jakarta.inject;
+    requires static org.jetbrains.annotations;
 
     exports backbonefx.di;
+    exports backbonefx.event;
 }
