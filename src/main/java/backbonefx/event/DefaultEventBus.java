@@ -10,9 +10,6 @@ import java.util.function.Consumer;
 /**
  * Default event bus implementation. Events are published in channels distinguished
  * by event type. Channels can be grouped using an event type hierarchy.
- * <p>
- * You can use the default event bus instance {@link #getInstance}, which is a singleton,
- * or you can create one or multiple instances of the {@link DefaultEventBus}.
  */
 @SuppressWarnings("unchecked")
 public final class DefaultEventBus implements EventBus {
@@ -24,16 +21,6 @@ public final class DefaultEventBus implements EventBus {
      * If you want to use global event bus go with singleton method instead.
      */
     public DefaultEventBus() { }
-
-    /** Returns global application-wide event bus instance. */
-    public static DefaultEventBus getInstance() {
-        return InstanceHolder.INSTANCE;
-    }
-
-    private static class InstanceHolder {
-
-        private static final DefaultEventBus INSTANCE = new DefaultEventBus();
-    }
 
     ///////////////////////////////////////////////////////////////////////////
 
