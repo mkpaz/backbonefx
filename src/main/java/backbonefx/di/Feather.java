@@ -210,7 +210,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * implement {@link Initializable} interface and put some initialization logic in here.
  * {@code @PostConstruct} annotation is deliberately not supported for the sake of simplicity.
  * Do not confuse {@code backbonefx.di.Initializable} with {@code javafx.fxml.Initializable}.
- * The latter is not supported to avoid javafx-fxml dependency.</p>
+ * The latter is not supported to avoid javafx-fxml dependency.
  *
  * <h2>How it works under the hood</h2>
  *

@@ -24,7 +24,7 @@ public final class DefaultEventBus implements EventBus {
 
     ///////////////////////////////////////////////////////////////////////////
 
-    /** @inheritDoc */
+    /** {@inheritDoc} */
     @Override
     public <E extends Event> void subscribe(Class<? extends E> eventType, Consumer<E> subscriber) {
         Objects.requireNonNull(eventType, "Event type must be specified.");
@@ -34,14 +34,14 @@ public final class DefaultEventBus implements EventBus {
         eventSubscribers.add(subscriber);
     }
 
-    /** @inheritDoc */
+    /** {@inheritDoc} */
     @Override
     public <E extends Event> void unsubscribe(Consumer<E> subscriber) {
         if (subscriber == null) { return; }
         subscribers.values().forEach(eventSubscribers -> eventSubscribers.remove(subscriber));
     }
 
-    /** @inheritDoc */
+    /** {@inheritDoc} */
     @Override
     public <E extends Event> void unsubscribe(Class<? extends E> eventType, Consumer<E> subscriber) {
         Objects.requireNonNull(eventType, "Event type must be specified.");
@@ -53,7 +53,7 @@ public final class DefaultEventBus implements EventBus {
                 .forEach(eventSubscribers -> eventSubscribers.remove(subscriber));
     }
 
-    /** @inheritDoc */
+    /** {@inheritDoc} */
     @Override
     public <E extends Event> void publish(E event) {
         Objects.requireNonNull(event, "Event must not be null.");

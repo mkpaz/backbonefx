@@ -41,7 +41,7 @@ public class ConsumerCommand<T> implements Command<T>, Consumer<T> {
         );
     }
 
-    /** @inheritDoc */
+    /** {@inheritDoc} */
     @Override
     public final boolean isExecutable() {
         return expression.get();
@@ -51,7 +51,7 @@ public class ConsumerCommand<T> implements Command<T>, Consumer<T> {
         return expression;
     }
 
-    /** @inheritDoc */
+    /** {@inheritDoc} */
     @Override
     public void execute(@Nullable T arg) {
         if (isExecutable()) {

@@ -38,7 +38,7 @@ public class RunnableCommand implements Command<Void>, Runnable {
         );
     }
 
-    /** @inheritDoc */
+    /** {@inheritDoc} */
     @Override
     public final boolean isExecutable() {
         return expression.get();
@@ -48,7 +48,7 @@ public class RunnableCommand implements Command<Void>, Runnable {
         return expression;
     }
 
-    /** @inheritDoc */
+    /** {@inheritDoc} */
     @Override
     public void execute(Void arg) {
         if (isExecutable()) {
