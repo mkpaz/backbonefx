@@ -6,7 +6,7 @@
     <groupId>io.github.mkpaz</groupId>
     <artifactId>backbonefx</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>backbonefx</name>
     <description>Opinionated set of tools for creating JavaFX apps</description>

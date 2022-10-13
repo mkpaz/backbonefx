@@ -8,4 +8,5 @@ module backbonefx {
 
     exports backbonefx.di;
     exports backbonefx.event;
+    exports backbonefx.mvvm;
 }
